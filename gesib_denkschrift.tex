@@ -5,24 +5,26 @@
 \usepackage[T1]{fontenc}
 \usepackage{csquotes}
 \usepackage{graphicx}
+\usepackage{hyperref}
 
 
 \author{Thomas Hilarius Meyer\\ \textsf{thomas.hilarius.meyer@gmail.com}}
 \title{Die Gersheimer Schulimkerei-Beute (GeSIB)}
 \subtitle{Überlegungen zu Konzeption, Bau und Betriebsweise}
+\date{1. März 2019}
 
 
 \begin{document}
-	\maketitle
+\maketitle
 
-        
+
 \begin{abstract}
-	Die Gersheimer Schulimkerei-Beute (GeSIB) ist eine Trogbeute für 24 Waben im Zander-Maß.
-	Sie eignet sich besonders für den pädagogisch motivierten Umgang mit Bienen, da alle Waben in einer
-	Ebene liegen und somit direkt einsehbar und zugänglich sind; im Umgang mit ihr sind
-	keine schweren Gewichte zu heben und die Arbeitshöhe bleibt konstant.
-	Alle Verfahren der modernen Magazin-Imkerei lassen sich mit der GeSIB durchführen und
-	ein späterer Wechsel der Jungimker etwa zu üblichen Magazinbeuten ist problemlos möglich.
+  Die Gersheimer Schulimkerei-Beute (GeSIB) ist eine Trogbeute für 21 Waben im Zander-Maß.
+  Sie eignet sich besonders für den pädagogisch motivierten Umgang mit Bienen, da alle Waben in einer
+  Ebene liegen und somit direkt einsehbar und zugänglich sind; im Umgang mit ihr sind
+  keine schweren Gewichte zu heben und die Arbeitshöhe bleibt konstant.
+  Alle Verfahren der modernen Magazin-Imkerei lassen sich mit der GeSIB durchführen und
+  ein späterer Wechsel der Jungimker etwa zu üblichen Magazinbeuten ist problemlos möglich.
 \end{abstract}
 
 
@@ -34,8 +36,8 @@ besonders in den ersten 1--2 Jahren des Imkern-Lernens -- ausgelegt ist!
 Die Mitglieder der Schulimkerei Gersheim haben eine Bienenbeute entwickelt, die sich ausschließlich diesem Ziel widmet:
 die Gersheimer Schulimkerei-Beute (GeSIB).
 
-Nach einem angemessenen Erprobungsbetrieb könnte die Herstellung der GeSIB die Angebotspalette unserer Schüllerfirma
-entscheidend erweitern.
+Nach einem angemessenen Erprobungsbetrieb könnte die Herstellung der GeSIB die Angebotspalette unserer
+Schülerfirma entscheidend erweitern.
 
 
 \subsection{Vorüberlegungen / Anforderungen}
@@ -91,9 +93,11 @@ für die speziellen Zwecke einer Schulimkerei nicht oder nicht optimal geeignet?
 \item[Top-Bar-Hive] Umstieg auf Magazin-Imkerei sehr kompliziert.
 \item[Bienenkiste] extrem unergonomisch; Stabilbau verhindert Wabenkontrolle.
 \item[Kunesa-Beute] extrem hoher Preis; Werkstoff Kunststoff erlaubt kein handwerkliches Arbeiten (Reparaturen etc.).
-\item[BienenBox] Format Kuntzsch (hoch)  (www.bienenbox.de)
+\item[BienenBox] Seltenes Wabenformat (Format Kuntzsch hoch) macht den Umstieg auf Magazinbeuten schwierig
+  (www.bienenbox.de)
 \item[Citybox (Fa. Holtermann)] hoher Preis, teilweise überspezielle Features
-\item[Alpentrogbeute (V. Weber)] komplizierter Aufbau, schwer zu bekommen, Honigräume werden aufgesetzt!
+\item[Alpentrogbeute (V. Weber)] komplizierter Aufbau, schwer zu bekommen, Honigräume werden aufgesetzt --
+  dadurch gehen gerade die Vorzüge der Trogbeute verloren!
 \end{description}
 
 
@@ -104,7 +108,8 @@ für die speziellen Zwecke einer Schulimkerei nicht oder nicht optimal geeignet?
 \includegraphics[width=\textwidth]{ansicht1}
 
 \begin{center}
-  [vgl. separate FreeCAD-Datei bzw. PDF-Pläne für konstruktive Details.]
+  [Achtung! Älterer Planungsstand, Skizze nicht maßstabsgerecht!
+  Vgl. ggf. separate FreeCAD-Datei bzw. PDF-Pläne für konstruktive Details.]
 \end{center}
 
 
@@ -114,20 +119,24 @@ für die speziellen Zwecke einer Schulimkerei nicht oder nicht optimal geeignet?
 \begin{tabular}{lll}
   Bezeichnung &                       Maße [in mm] &          Anzahl \\
   \hline
-  Seitenbrett links + rechts &        800 x 240 &             2 \\
+  Leimholzplatten 25mm: \\
+  Seitenbrett links + rechts &        800 x 270 &             2 \\
   Seitl. Griffbrett links + rechts &  800 x 60 &              2 \\
-  Stirnbrett vorne &                  540 x 245 &             1 \\
-  Rückwand &                          540 x 290 &             1 \\
-  Bodenbrett hinten &                 540 x 300 &             1 \\
+  Stirnbrett vorne &                  540 x 275 &             1 \\
+  Rückwand &                          540 x 320 &             1 \\
+  Bodenbrett hinten &                 540 x 360 &             1 \\
   Bodenbrett vorne &                  540 x 100 &             1 \\
-  Schubleisten &                      540 x 30 x 8 &          2 \\
   \hline
+  Sperrholz 8mm o.\,ä.: \\
+  Schubleisten &                      540 x 60 &          2 \\
+  \hline
+  Dämmmaterial (z.\,B. MDF): \\
   Innendeckel (Dämmmaterial) &        850 x 540 &             1 \\
   \hline
 \end{tabular}
-
-[Materialstärke 25mm wenn nicht angegeben.]
 \end{center}
+
+Alternativ zum MDF-Innendeckel lassen sich auch zwei Standard-Liebig-Innendeckel nebeneinander verwenden.
 
 
 \minisec{Zusatzteile}
@@ -139,7 +148,7 @@ für die speziellen Zwecke einer Schulimkerei nicht oder nicht optimal geeignet?
   Bezeichnung &                       Maße [in mm] \\
   \hline
   Trägerleiste &                      490 x 25 x 10 \\
-  Schiet-Brett &                      440 x 265 x 10 \\
+  Schiet-Brett &                      440 x 295 x 10 \\
   \hline
 \end{tabular}
 \end{center}
@@ -149,8 +158,17 @@ Zum Betrieb werden drei Varianten eines vertikalen Trennschieds benötigt:
 
 \begin{itemize}
 \item das Trennschied selbst, um v.\,a. im Winter den Innenraum der Beute zu begrenzen,
-\item ein vertikales Königinnenabsperrgitter und 
+\item ein vertikales Königinnenabsperrgitter und
 \item eine vertikale Bienenflucht.
+\end{itemize}
+
+
+\minisec{Zusätzliches Material}
+
+\begin{itemize}
+\item Schrauben 5x60mm
+\item wasserfester Leim
+\item Anstrich (Leinölfirnis)
 \end{itemize}
 
 
@@ -181,14 +199,14 @@ Durch die flache Bauweise wird der Bienensitz nur minimal gestört.
 
 \subsection{Ablegerbildung}
 
-Die Vermehrung der Völkerzahl durch die Bildung von Ablegern erfolgt 
+Die Vermehrung der Völkerzahl durch die Bildung von Ablegern erfolgt
 entweder durch Bildung in der GeSIB (mit Fluglochverkleinerung und Volumenbegrenzungsschied)
 oder in normalem Zander-Ablegerkasten (gleiches Wabenmaß).
 
 
 \subsection{Honigernte}
 
-Durch die Benutzung des vertikalen Absperrgitters sowie 
+Durch die Benutzung des vertikalen Absperrgitters sowie
 der vertikale Bienenflucht
 gestaltet sich die Honigernte einfach und ohne massiv mit den Bienen in Kontakt zu kommen.
 
@@ -197,6 +215,8 @@ gestaltet sich die Honigernte einfach und ohne massiv mit den Bienen in Kontakt 
 
 Die Sommerbehandlung der Varroamilbe erfolgt am einfachsten durch Einsatz der bekannten
 Nassenheider Professional-Verdunster im bisherigen Honigraum.
+
+Die Bodenöffnung lässt sich mit Bodenschiebern der standardisierten Liebig-Beute verschließen.
 
 
 \subsection{Einfütterung}
@@ -215,16 +235,28 @@ Die thermischen Eigenschaften der GeSIB sind dann nicht ungünstiger als bei ein
 \begin{description}
 \item[Herbst 2017] erste Vorüberlegungen
 \item[Januar/Februar 2018] Planskizze
-\item[Imkersaison 2018] Erprobungsbetrieb in Gersheim
+\item[Winter 2018/19] Bau eines Prototypen; Überarbeitung der Maße
+\item[Imkersaison 2019] Erprobungsbetrieb in Gersheim
 \end{description}
 
 
 \section{Literaturhinweise}
 
 \begin{enumerate}
+\item Johannes Otto Hüsing u. Joachim Nitschmann (Hgg.), Lexikon der Bienenkunde, München 1987; s.\,v.
+  \enquote{Trogbeute} u.
+  \enquote{Entwicklung der Bienenwohnungen.}
 \item Gerhard Liebig, Einfach imkern, (3. Aufl.) 2011.
 \item Friedrich Pohl (Hg.), Bienenkiste, Korb und Einfachbeuten. Naturnah und erfolgreich imkern, Stuttgart 2013.
 \item Johannes Weber, Bienen halten mit der BienenBox, Stuttgart 2016.
 \item Vinzenz Weber, Leichter imkern mit Trogbeuten, München (2. Aufl.) 1990.
 \end{enumerate}
+
+
+\section{Ressourcen}
+
+\url{http:\\\\schulimkerei.blogspot.com}
+
+\url{http:\\\\github.com\\thomas-hilarius-meyer\\GersheimerSchulimkereiBeute}
+
 \end{document}
